@@ -1,0 +1,12 @@
+From: HOSHINO Takashi <hoshino@labs.cybozu.co.jp>
+Date: Mon, 2 Jul 2018 11:58:35 +0900
+Subject: add hoge
+
+---
+ hoge | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hoge
+
+diff --git a/hoge b/hoge
+new file mode 100644
+index 0000000..e69de29

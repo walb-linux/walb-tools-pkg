@@ -1,0 +1,8 @@
+Update changelog (package version)
+> gbp dch -N 1.0.18~beta6-0xenial1 --ignore-branch --commit
+
+Create debian-version tag
+> gbp buildpackage --git-tag-only --git-ignore-branch
+
+Build
+> debian/scripts/gbp-build.sh
