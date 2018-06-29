@@ -1,0 +1,58 @@
+walb-tools (1.0.18~beta8-0trusty1) UNRELEASED; urgency=medium
+
+  [ HOSHINO Takashi ]
+  * For test.
+  * update cybozulib to release20180830.
+  * cybozulib: Socket::write() supports unitSize.
+  * packet: set default write unit size to 64KiB.
+  * archive: improve a log message.
+  * use static_cast instead C cast.
+  * itest: bugfix: use oflag=direct for dd.
+  * bdiff: use O_DIRECT.
+  * VirtualFullScanner: supports aio for base images.
+  * add debian directory.
+  * add script
+  * update
+  * update
+  * Update changelog for 1.0.17-0trusty2 release
+  * update
+
+  [ Takashi HOSHINO ]
+
+  [ HOSHINO Takashi ]
+  * bhash: support stdin.
+  * controller: bugfix: virt-full-scan with stdout does not work.
+  * archive: put more verbose logs for prepareRawFullScanner and prepareVirtualFullScanner.
+  * add checksum for dirty full sync. change PROTOCOLs.
+  * add debian directory.
+  * add debian/README.
+
+  [ Takashi HOSHINO ]
+
+  [ HOSHINO Takashi ]
+  * archive: put more verbose logs for prepareRawFullScanner and prepareVirtualFullScanner.
+  * add checksum for dirty full sync. change PROTOCOLs.
+  * ParallelConverter supports error logging.
+  * make move constructors and move assign operators noexcept.
+  * add debian directory.
+  * add build-pkg.sh
+
+  [ Takashi HOSHINO ]
+
+  [ HOSHINO Takashi ]
+  * bugfix and refactor: getting diff list algorithm for apply/restore/scan.
+  * virt-full-scan: flush buffer cache at the end.
+  * virt-full-scan: add scan-sleep-pct option.
+  * add debian directory.
+  * add build-pkg.sh
+  * Update changelog for 1.0.18~beta7-0trusty1 release
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Thu, 20 Sep 2018 18:13:42 +0900
+
+walb-tools (1.0.17-0trusty1) trusty; urgency=low
+
+  * Initial release.
+
+ -- Takashi HOSHINO <starpos@gmail.com>  Fri, 29 Jun 2018 18:28:18 +0900
