@@ -1,0 +1,25 @@
+walb-tools (1.0.19~beta1-0trusty1) UNRELEASED; urgency=medium
+
+  [ HOSHINO Takashi ]
+  * doc: update link to WalB driver repository.
+  * archive: track lock waiting/holding time.
+  * controller: add -retry option for status and get command.
+  * archive: add -maxopen-virt option.
+  * proxy: remove -wl option (maxConversionMb).
+  * add debian directory.
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 31 Oct 2018 22:06:10 +0900
+
+walb-tools (1.0.18-0trusty1) trusty; urgency=medium
+
+  * Upstream version 1.0.18
+
+ -- Takashi HOSHINO <hoshino@labs.cybozu.co.jp>  Wed, 03 Oct 2018 14:52:49 +0900
+
+walb-tools (1.0.17-0trusty1) trusty; urgency=low
+
+  * Initial release.
+
+ -- Takashi HOSHINO <starpos@gmail.com>  Fri, 29 Jun 2018 18:28:18 +0900
