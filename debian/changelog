@@ -1,16 +1,6 @@
-walb-tools (1.0.17-0trusty2) UNRELEASED; urgency=medium
+walb-tools (1.0.18~beta1-0trusty1) UNRELEASED; urgency=medium
 
-  [ HOSHINO Takashi ]
-  * rename DISABLE_COPY_AND_ASSIGN() macro to avoid conflicts.
-  * bugfix: make static build enable, especifally for STATIC=1 and BFD=1.
-  * update doc.
-  * wldev-checker: limit wlog readahead.
-  * add debian directory.
-  * add script
-  * update
-  * update
-
-  [ Takashi HOSHINO ]
+  * For test.
 
  -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 27 Aug 2018 19:49:35 +0900
 
