@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta3-0xenial1) UNRELEASED; urgency=low
+walb-tools (1.0.18~beta4-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
   * Initial release. Closes: #12345
@@ -30,4 +30,15 @@ walb-tools (1.0.18~beta3-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 13:15:17 +0900
+  [ HOSHINO Takashi ]
+  * bhash: support stdin.
+  * add debian directory.
+  * Update changelog for 1.0.17-0xenial1 release
+  * add gbp build script.
+  * Version 1.0.18~beta2-0xenial1
+  * Version 1.0.18~beta3-0xenial1
+  * add debian/gbp.conf.
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 21:01:10 +0900
