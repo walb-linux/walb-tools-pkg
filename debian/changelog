@@ -1,8 +1,25 @@
-walb-tools (1.0.18~beta1-0trusty1) UNRELEASED; urgency=medium
+walb-tools (1.0.18~beta3-0trusty1) UNRELEASED; urgency=medium
 
+  [ HOSHINO Takashi ]
   * For test.
+  * update cybozulib to release20180830.
+  * cybozulib: Socket::write() supports unitSize.
+  * packet: set default write unit size to 64KiB.
+  * archive: improve a log message.
+  * use static_cast instead C cast.
+  * itest: bugfix: use oflag=direct for dd.
+  * bdiff: use O_DIRECT.
+  * VirtualFullScanner: supports aio for base images.
+  * add debian directory.
+  * add script
+  * update
+  * update
+  * Update changelog for 1.0.17-0trusty2 release
+  * update
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 27 Aug 2018 19:49:35 +0900
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 14:38:49 +0900
 
 walb-tools (1.0.17-0trusty1) trusty; urgency=low
 
