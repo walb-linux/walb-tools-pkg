@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta4-0xenial1) UNRELEASED; urgency=low
+walb-tools (1.0.18~beta5-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
   * Initial release. Closes: #12345
@@ -41,4 +41,10 @@ walb-tools (1.0.18~beta4-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 21:01:10 +0900
+  [ HOSHINO Takashi ]
+  * controller: bugfix: virt-full-scan with stdout does not work.
+  * add debian directory.
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 21:13:47 +0900
