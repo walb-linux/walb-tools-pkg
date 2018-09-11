@@ -18,6 +18,7 @@ struct DualBuffer
 {
     Buffer src;
     Buffer dst;
+    uint32_t csum;
 
     // used by server only.
     uint64_t offLb;
@@ -66,12 +67,13 @@ public:
 };
 
 
-void sendIoData(packet::Packet& pkt, const Buffer& dst)
+void sendIoData(packet::Packet& pkt, const Buffer& dst, uint32_t csum)
 {
     if (dst.empty()) {
         pkt.write(0);
     } else {
         pkt.write(dst.size());
+        pkt.write(csum);
         pkt.write(dst.data(), dst.size());
     }
 }
@@ -138,6 +140,7 @@ bool dirtyFullSyncClient(
         Buffer& dst = dbuf.dst;
         if (cybozu::util::isAllZero(src.data(), src.size())) {
             dst.resize(0);
+            dbuf.csum = 0;
         } else {
             dst.resize(src.size() * 2 + 4096); // should be enough size.
             size_t s;
@@ -148,6 +151,7 @@ bool dirtyFullSyncClient(
                 throw cybozu::Exception(__func__)
                     << "compress: dst buffer is not enough" << dst.size() << src.size();
             }
+            dbuf.csum = cybozu::util::calcChecksum(dst.data(), dst.size(), 0);
         }
         return std::move(dbuf);
     });
@@ -158,7 +162,7 @@ bool dirtyFullSyncClient(
         if (!pconv.pop(dbuf)) {
             throw cybozu::Exception(__func__) << "parallel converter failed";
         }
-        dirty_full_sync_local::sendIoData(pkt, dbuf.dst);
+        dirty_full_sync_local::sendIoData(pkt, dbuf.dst, dbuf.csum);
         dbufCache.add(std::move(dbuf));
     };
 
@@ -235,6 +239,11 @@ bool dirtyFullSyncServer(
             dst.resize(0);
         } else {
             size_t origSize = dbuf.lenLb * LOGICAL_BLOCK_SIZE;
+            uint32_t csum = cybozu::util::calcChecksum(src.data(), src.size(), 0);
+            if (csum != dbuf.csum) {
+                throw cybozu::Exception(FUNC)
+                    << "invalid checksum" << csum << dbuf.csum << src.size() << origSize;
+            }
             dst.resize(origSize);
             size_t s = uncmpr.run(dst.data(), dst.size(), src.data(), src.size());
             if (origSize != s) {
@@ -311,6 +320,7 @@ bool dirtyFullSyncServer(
         if (encSize == 0) {
             src.resize(0);
         } else {
+            pkt.read(dbuf.csum);
             src.resize(encSize);
             pkt.read(src.data(), src.size());
         }
