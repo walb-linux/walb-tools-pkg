@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta3-0trusty1) UNRELEASED; urgency=medium
+walb-tools (1.0.18~beta6-0trusty1) UNRELEASED; urgency=medium
 
   [ HOSHINO Takashi ]
   * For test.
@@ -19,7 +19,17 @@ walb-tools (1.0.18~beta3-0trusty1) UNRELEASED; urgency=medium
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Mon, 10 Sep 2018 14:38:49 +0900
+  [ HOSHINO Takashi ]
+  * bhash: support stdin.
+  * controller: bugfix: virt-full-scan with stdout does not work.
+  * archive: put more verbose logs for prepareRawFullScanner and prepareVirtualFullScanner.
+  * add checksum for dirty full sync. change PROTOCOLs.
+  * add debian directory.
+  * add debian/README.
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Tue, 11 Sep 2018 18:34:06 +0900
 
 walb-tools (1.0.17-0trusty1) trusty; urgency=low
 
