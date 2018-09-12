@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta6-0xenial1) UNRELEASED; urgency=low
+walb-tools (1.0.18~beta7-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
   * Initial release. Closes: #12345
@@ -55,4 +55,13 @@ walb-tools (1.0.18~beta6-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Tue, 11 Sep 2018 18:26:33 +0900
+  [ HOSHINO Takashi ]
+  * archive: put more verbose logs for prepareRawFullScanner and prepareVirtualFullScanner.
+  * add checksum for dirty full sync. change PROTOCOLs.
+  * ParallelConverter supports error logging.
+  * make move constructors and move assign operators noexcept.
+  * add debian directory.
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 12 Sep 2018 13:07:49 +0900
