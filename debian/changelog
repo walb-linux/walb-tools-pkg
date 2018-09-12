@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta6-0trusty1) UNRELEASED; urgency=medium
+walb-tools (1.0.18~beta7-0trusty1) UNRELEASED; urgency=medium
 
   [ HOSHINO Takashi ]
   * For test.
@@ -29,7 +29,17 @@ walb-tools (1.0.18~beta6-0trusty1) UNRELEASED; urgency=medium
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Tue, 11 Sep 2018 18:34:06 +0900
+  [ HOSHINO Takashi ]
+  * archive: put more verbose logs for prepareRawFullScanner and prepareVirtualFullScanner.
+  * add checksum for dirty full sync. change PROTOCOLs.
+  * ParallelConverter supports error logging.
+  * make move constructors and move assign operators noexcept.
+  * add debian directory.
+  * add build-pkg.sh
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 12 Sep 2018 13:19:27 +0900
 
 walb-tools (1.0.17-0trusty1) trusty; urgency=low
 
