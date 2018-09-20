@@ -1,4 +1,4 @@
-walb-tools (1.0.18~beta7-0xenial1) UNRELEASED; urgency=low
+walb-tools (1.0.18~beta8-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
   * Initial release. Closes: #12345
@@ -64,4 +64,14 @@ walb-tools (1.0.18~beta7-0xenial1) UNRELEASED; urgency=low
 
   [ Takashi HOSHINO ]
 
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 12 Sep 2018 13:07:49 +0900
+  [ HOSHINO Takashi ]
+  * bugfix and refactor: getting diff list algorithm for apply/restore/scan.
+  * virt-full-scan: flush buffer cache at the end.
+  * virt-full-scan: add scan-sleep-pct option.
+  * add debian directory.
+  * Update changelog for 1.0.18~beta7-0xenial1 release
+  * add build-pkg.sh
+
+  [ Takashi HOSHINO ]
+
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Thu, 20 Sep 2018 18:09:21 +0900
