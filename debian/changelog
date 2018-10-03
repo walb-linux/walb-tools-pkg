@@ -1,6 +1,5 @@
-walb-tools (1.0.18-0xenial1) xenial; urgency=low
+walb-tools (1.0.18-0bionic1) bionic; urgency=low
 
-  [ Takashi HOSHINO ]
   * Initial release as quilt package.
 
- -- Takashi HOSHINO <hoshino@labs.cybozu.co.jp>  Wed, 03 Oct 2018 14:44:46 +0900
+ -- Takashi HOSHINO <hoshino@labs.cybozu.co.jp>  Wed, 03 Oct 2018 15:01:03 +0900
