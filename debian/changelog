@@ -1,16 +1,9 @@
-walb-tools (1.0.19~beta1-0xenial1) UNRELEASED; urgency=medium
+walb-tools (1.0.19-0xenial1) xenial; urgency=low
 
   [ HOSHINO Takashi ]
-  * doc: update link to WalB driver repository.
-  * archive: track lock waiting/holding time.
-  * controller: add -retry option for status and get command.
-  * archive: add -maxopen-virt option.
-  * proxy: remove -wl option (maxConversionMb).
-  * add debian directory.
+  * version 1.0.19
 
-  [ Takashi HOSHINO ]
-
- -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 31 Oct 2018 22:11:11 +0900
+ -- HOSHINO Takashi <hoshino@labs.cybozu.co.jp>  Wed, 31 Oct 2018 22:47:11 +0900
 
 walb-tools (1.0.18-0xenial1) xenial; urgency=low
 
